@@ -1,0 +1,120 @@
+---
+---
+
+/* System UI + Japanese support */
+$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans", "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+$header-font-family: $body-font-family;
+
+@import "minima";
+
+/* Small utility tweaks */
+.site-title {
+  font-weight: 700;
+  float: left;
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+.site-nav .page-link {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Home hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.75rem;
+  padding: 1.75rem 0 2.25rem;
+}
+
+/* Center document horizontally in main content */
+.page-content .wrapper {
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.doc-center {
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hero__avatar {
+  width: 128px;
+  height: 128px;
+  border-radius: 9999px;
+  object-fit: cover;
+  border: 2px solid rgba(0,0,0,0.06);
+}
+.hero__name {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin: 0.25rem 0 0.5rem;
+}
+.hero__links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.hero__link {
+  color: inherit;
+}
+.hero__link:hover {
+  opacity: 0.8;
+}
+
+/* Footer center social */
+.footer-center {
+  text-align: center;
+  padding: 1.25rem 0 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-center .social-media-list {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+/* Vertically center icon within list item */
+.footer-center .social-media-list li {
+  display: flex;
+  align-items: center;
+}
+.footer-center .social-media-list a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+.footer-center .social-media-list li {
+  margin: 0;
+}
+.footer-center .social-media-list a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  padding: 0;
+}
+.footer-center .svg-icon {
+  display: block;
+}
+
+/* Compact footer height */
+.site-footer {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  background-color: #efefef;
+}
+
+/* Remove underline on link hover site-wide */
+a:hover,
+a:focus,
+.post-link:hover,
+.site-nav .page-link:hover {
+  text-decoration: none;
+}

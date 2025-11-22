@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if paginator -%}
+    {%- assign posts = paginator.posts -%}
+  {%- else -%}
+    {%- assign posts = site.posts -%}
+  {%- endif -%}
+
+  <ul class="post-list">
+    {%- for post in posts -%}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h3>
+      </li>
+    {%- endfor -%}
+  </ul>
+
+  {%- if paginator -%}
+    <div class="pagination">
+      {%- if paginator.previous_page -%}
+        <a class="previous" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Previous</a>
+      {%- endif -%}
+      {%- if paginator.next_page -%}
+        <a class="next" href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+</div>
