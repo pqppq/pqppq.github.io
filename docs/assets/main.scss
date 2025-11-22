@@ -68,6 +68,11 @@ $header-font-family: $body-font-family;
   opacity: 0.8;
 }
 
+h1.post-title {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
 /* Footer center social */
 .footer-center {
   text-align: center;
@@ -117,4 +122,33 @@ a:focus,
 .post-link:hover,
 .site-nav .page-link:hover {
   text-decoration: none;
+}
+
+/* Post list: date and title in a single row */
+.post-list > li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+.post-list > li .post-meta {
+  flex: 0 0 auto;
+  min-width: 6.5rem; /* enough space for YYYY-MM-DD */
+  margin: 0;
+}
+.post-list > li h3 {
+  margin: 0; /* remove default top/bottom margins to keep the row compact */
+}
+.post-list > li .post-meta,
+.post-list > li h3,
+.post-list > li h3 .post-link {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+@media (max-width: 480px) {
+  .post-list > li {
+    gap: 0.5rem;
+  }
+  .post-list > li .post-meta {
+    min-width: 5.75rem; /* slightly tighter on small screens */
+  }
 }
