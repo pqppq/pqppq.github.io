@@ -15,7 +15,7 @@ date:   2025-11-22
 参考.
 
 - [GitHub PagesとJekyllについて](https://docs.github.com/ja/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)
-- [jekyllrb](https://jekyllrb.com/)
+- [Jekyll](https://jekyllrb.com/)
     - Ruby製のstaticなサイトジェネレータツール
 - [jekyll/minima](https://github.com/jekyll/minima)
     - シンプルなjekyllのtheme
